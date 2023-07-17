@@ -1,0 +1,117 @@
+/*Typography*/
+
+@font-face { 
+  font-family: Droid Sans; 
+    src: url('../fonts/DroidSans-webfont.eot'); 
+    src: local("Droid Sans"), url('../fonts/DroidSans-webfont.woff'); 
+} 
+
+@font-face { 
+  font-family: Jenna Sue; 
+    src: url('../fonts/JennaSue-webfont.eot'); 
+    src: local("Jenna Sue"), url('../fonts/JennaSue-webfont.ttf'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+body { 
+  font: normal .85em 'Droid Sans', arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+p { 
+  line-height: 1.5em;
+  clear:both;
+}
+
+h1, h2 { 
+ /* font: normal 350% 'Jenna Sue', arial, sans-serif;*/
+  font-family: 'Jenna Sue', arial, sans-serif;
+  font-size:2.75em;
+  font-weight:normal;
+  /*padding: 10px 0 5px 0;*/
+}
+
+h2 { 
+  font: normal 220% 'Jenna Sue', arial, sans-serif;
+  color: #FFF;  
+  padding: 0 0 8px 0;
+}
+
+h3 {
+  font: normal 120% arial, sans-serif;
+}
+
+#logo h1 { 
+  font: normal 450% 'Fondamento', arial, sans-serif;
+  padding: 40px 0 0 0;
+  color: #437034;
+  font-weight:bold;
+}
+
+#breakfastmenu {
+  font: normal 250% 'Jenna Sue', arial, sans-serif;
+}
+
+#lunchmenu {
+  font: normal 250% 'Jenna Sue', arial, sans-serif;
+}
+
+footer { 
+  /*font: 109% 'Droid Sans', arial, sans-serif;*/
+  font-family:'Droid Sans', arial, sans-serif;
+  font-size:20px;
+  height: 75px;
+ /* padding: 17px 0 5px 0;*/
+	  padding-bottom:20px;
+  text-align: center; 
+}
+footer p{
+	  line-height:.75em;
+}
+
+@media only screen and (max-width:930px){
+	
+	footer {  
+		font-family:'Droid Sans', arial, sans-serif;
+		font-size:1.25em;
+		height: 75px;
+		padding-bottom:5px;
+		text-align: center; 
+	}
+	footer p{
+	  line-height:.75em;
+	}
+}
+
+@media only screen and (max-width:930px){
+	
+	footer {  
+		font-family:'Droid Sans', arial, sans-serif;
+		font-size:1.15em;
+		height: 75px;
+		padding-bottom:2px;
+		text-align: center; 
+		padding-top:5px;
+	}
+	footer p{
+	  line-height:.5em;
+	}
+	footer p#byLine{
+		font-size:.80em;
+	}
+}
+
+@media only screen and (max-width:440px){
+	footer{
+		height:100px;
+	}
+	footer p{
+	line-height:1em;
+	}
+	
+}
