@@ -19,7 +19,7 @@ npm run dev
 
 Rename **.env.example** to **.env** and edit the values
 
-##Yelp API Fusion
+## Yelp API Fusion env variables
 
 - API_BASE_URL = "https://api.yelp.com/v3/businesses/steves-cafe-expresso-bothell/reviews"
 - API_KEY_VALUE = "YOUR API KEY"
