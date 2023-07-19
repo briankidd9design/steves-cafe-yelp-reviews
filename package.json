@@ -7,7 +7,7 @@
     "start": "node index",
     "dev": "nodemon index"
   },
-  "author": "Brad Traversy",
+  "author": "Brian Kidd",
   "license": "MIT",
   "dependencies": {
     "apicache": "^1.6.2",
