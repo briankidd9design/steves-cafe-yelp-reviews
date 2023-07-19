@@ -1,6 +1,6 @@
 # Node API Proxy Server
 
-Using the Yelp Api, I created an Express proxy server so that Yelp reviews can be loaded to the reviews section of of the reviews page. Yelp's servers do not allow Cors requests, even with the Access-Control-Allow-Orgin Authorization header. 
+Using the Yelp Api, I created an Express proxy server so that Yelp reviews can be loaded to the reviews section of the reviews page. Yelp's servers do not allow Cors requests, even with the Access-Control-Allow-Orgin Authorization header. 
 ## Usage
 
 ### Install dependencies
@@ -19,7 +19,7 @@ npm run dev
 
 Rename **.env.example** to **.env** and edit the values
 
-If the public API URL is **https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIkey}**
+## Yelp API Fusion env variables
 
 - API_BASE_URL = "https://api.yelp.com/v3/businesses/steves-cafe-expresso-bothell/reviews"
 - API_KEY_VALUE = "YOUR API KEY"
