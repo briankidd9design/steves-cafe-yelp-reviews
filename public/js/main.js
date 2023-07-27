@@ -25,7 +25,7 @@ const initialRender = (dataSet) => {
 	<div class = "container"> 
 		<p>Rating out of five: ${rating}</p>
 		<p>${text}</p>
-		<p><a href = "${link}" target="_blank">Read Full Review </a></p>
+		<p><a href = "${link}" target="_blank">Read Full Review...</a></p>
 		<p>${user.name}</p>
 	</div> `
 }
@@ -46,7 +46,7 @@ const clickThroughData = async (dataSet) => {
 			<div class = "container"> 
 				<p>Rating out of five: ${rating}</p>
 				<p>${text}</p>
-				<p><a href = "${link}" target="_blank">Read Full Review </a></p>
+				<p><a href = "${link}" target="_blank">Read Full Review...</a></p>
 				<p>${user.name}</p>
 			</div> `
 		// Modulus operator ensures the counter starts over at zero, 0, 1, 2, 0

@@ -315,6 +315,9 @@ section#reviewsContent{
 	display: flex;
 	margin-left: 2%;
 }
+.clickBtn {
+	cursor: pointer;
+}
 #yelpLogoContainer {
 	display: flex;
 	flex-direction: column;
@@ -324,6 +327,9 @@ section#reviewsContent{
 }
 .reviews p {
 	line-height: 1;
+}
+.reviews p a:hover {
+	text-decoration: underline;
 }
 #yelpLogo {
 	width: 150px;
