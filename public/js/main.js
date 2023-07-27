@@ -5,29 +5,28 @@ const getData = async () => {
 	const url = `/api`;
 	const res = await fetch(url);
 	const data = await res.json()
-	console.log(data);
+	// console.log(data);
 	return data;
 }
 
 const payload = async () => {
 	const payload = await getData();
-	console.log(payload);
 	let dataSet = payload.reviews;
-		console.log(payload);
-		console.log(dataSet);
 		initialRender(dataSet);
 		clickThroughData(dataSet);
 }
 
 const initialRender = (dataSet) => {
 	let element = dataSet[0];
+	// destructuring for element
+	let {rating, text, user} = element;
 	let link = element.url;
 	display.innerHTML = `
 	<div class = "container"> 
-		<p>Rating out of five: ${element.rating}</p>
-		<p>${element.text}</p>
+		<p>Rating out of five: ${rating}</p>
+		<p>${text}</p>
 		<p><a href = "${link}" target="_blank">Read Full Review </a></p>
-		<p>${element.user.name}</p>
+		<p>${user.name}</p>
 	</div> `
 }
 
@@ -40,15 +39,17 @@ const clickThroughData = async (dataSet) => {
 	btn.addEventListener("click", () => {
 	
 	  	let element = dataSet[counter];
+		// destructuring for element
+		let {rating, text, user} = element;
 		let link = element.url;
 		display.innerHTML = `
 			<div class = "container"> 
-				<p>Rating out of five: ${element.rating}</p>
-				<p>${element.text}</p>
+				<p>Rating out of five: ${rating}</p>
+				<p>${text}</p>
 				<p><a href = "${link}" target="_blank">Read Full Review </a></p>
-				<p>${element.user.name}</p>
+				<p>${user.name}</p>
 			</div> `
-		
+		// Modulus operator ensures the counter starts over at zero, 0, 1, 2, 0
 			counter = (counter + 1) % dataSet.length;
 	});
 

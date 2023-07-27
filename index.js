@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const rateLimit = require('express-rate-limit')
+//const rateLimit = require('express-rate-limit')
 require('dotenv').config()
 const errorHandler = require('./middleware/error')
 
@@ -32,13 +32,11 @@ app.use(cors())
 
 // Set static folder
 // This should load the index.html file on http://localhost:5000
-// app.use(express.static('public'))
 app.use(express.static('public'))
-// // Routes
-// app.use('/api', require('./routes'))
+
 
 // // Error handler middleware
-// app.use(errorHandler)
+app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
